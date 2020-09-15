@@ -6,10 +6,9 @@ const slimbot = new Slimbot(process.env.TG_BOT_TOKEN);
 
 // slimbot.setWebhook({ url: "https://telegram-bot-c1cjuaz9c.vercel.app/webhook" });
 
-slimbot.getWebhookInfo();
-
 module.exports = async function webhook(req, res){
+	slimbot.sendMessage(GROUP_ID, "Message received");
 	res.status(200).json({
-		status: "ok"
+		status: "UPDATED"
 	});
 };

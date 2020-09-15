@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "commonjs",
+  "repository": "https://github.com/dyus6661/telegram-bot",
   "scripts": {
     "start": "node app/index.js"
   },
